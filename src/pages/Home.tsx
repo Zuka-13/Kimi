@@ -22,12 +22,14 @@ const Home: FunctionComponent = () => {
       <HeaderDesktop />
       {/* Hero Section - Where the search bar is to search for destinations to find cars */}
       <HeroSection />
+      {/* Section with CSS code via TailwindCSS for the "Find your ride" H1 tag */}
       <div className="w-[376px] h-7 absolute !m-[0] top-[2026px] right-[521px] bg-orange-300 mix-blend-normal" />
       <section className="self-stretch flex flex-row items-start justify-center pt-0 pb-[102.4px] pr-[27px] pl-5 box-border max-w-full text-left text-54xl-7 text-white font-noto-serif">
         <div className="w-[588.3px] flex flex-col items-start justify-start gap-[23.8px] max-w-full shrink-0">
           <div className="self-stretch relative tracking-[-1px] leading-[90px] font-black shrink-0 [debug_commit:1de1738] mq450:text-25xl mq450:leading-[54px] mq800:text-40xl mq800:leading-[72px]">
             Find your ride
           </div>
+          {/* Section with CSS code via TailwindCSS for the "Car rentals from trusted, local hosts" H2 tag */}
           <div className="flex flex-row items-start justify-start py-0 pr-[52px] pl-[59px] box-border max-w-full shrink-0 text-8xl font-inter mq800:pl-[29px] mq800:pr-[26px] mq800:box-border">
             <div className="flex flex-row items-start justify-start relative max-w-full">
               <div className="h-8 w-[640px] absolute !m-[0] bottom-[-15px] left-[-81.1px] bg-orange-400 mix-blend-normal" />
