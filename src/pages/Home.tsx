@@ -18,7 +18,9 @@ const Home: FunctionComponent = () => {
   return (
     <div className="w-full relative bg-darkslategray-200 flex flex-col items-start justify-start pt-0 px-0 pb-[19.3px] box-border mix-blend-normal leading-[normal] tracking-[normal]">
       <div className="w-[376px] h-7 absolute !m-[0] right-[489px] bottom-[659px] bg-orange-200 mix-blend-normal" />
+      {/* Header Section */} 
       <HeaderDesktop />
+      {/* Hero Section - Where the search bar is to search for destinations to find cars */}
       <HeroSection />
       <div className="w-[376px] h-7 absolute !m-[0] top-[2026px] right-[521px] bg-orange-300 mix-blend-normal" />
       <section className="self-stretch flex flex-row items-start justify-center pt-0 pb-[102.4px] pr-[27px] pl-5 box-border max-w-full text-left text-54xl-7 text-white font-noto-serif">
