@@ -4,8 +4,12 @@ import HeroSection from "../components/HeroSection";
 import Button from "../components/Button";
 import DestinationBrowse from "../components/DestinationBrowse";
 import DestinationCardTwo from "../components/DestinationCardTwo";
-import FrameComponent from "../components/FrameComponent";
+import FrameComponent from "../components/FrequentlyAskedQuestions";
 import Footer1 from "../components/Footer1";
+import GiftCard from "../components/GiftCard";
+import ReviewSection from "../components/ReviewSection";
+import CTABubble from "../components/CTABubble";
+import FrequentlyAskedQuestions from "../components/FrequentlyAskedQuestions";
 
 const Home: FunctionComponent = () => {
 
@@ -96,7 +100,7 @@ const Home: FunctionComponent = () => {
                 </div>
               </div>
               {/* CTA button routing to the rent your car page providing text, route and color */}
-                <Button text={"Start making money"} route={"/rent-your-car"} color={"#F1BF42"} />
+                <Button text={"Start making money"} route={"/rent-your-car"} color={"#85bb65"} />
             </div>
           </div>
           {/* Image of the rent-out-car section */}
@@ -107,7 +111,13 @@ const Home: FunctionComponent = () => {
           />
         </div>
       </section>
-      <FrameComponent />
+      {/* Calling the Gift Card component */}
+      <GiftCard />
+      {/* Calling the Review component */}
+      <ReviewSection />
+      <CTABubble />
+      {/* Calling the FAQ component */}
+      <FrequentlyAskedQuestions />
       {/* Calling the footer component */}
       <Footer1 />
     </div>

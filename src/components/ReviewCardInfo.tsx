@@ -1,6 +1,6 @@
 import { FunctionComponent, useMemo, type CSSProperties } from "react";
 
-export type FrameComponent5Type = {
+export type ReviewCardInfoType = {
   edwardN?: string;
   tripsJoinedJun2022?: string;
 
@@ -9,7 +9,7 @@ export type FrameComponent5Type = {
   propWidth1?: CSSProperties["width"];
 };
 
-const FrameComponent5: FunctionComponent<FrameComponent5Type> = ({
+const ReviewCardInfo: FunctionComponent<ReviewCardInfoType> = ({
   edwardN,
   tripsJoinedJun2022,
   propWidth,
@@ -62,4 +62,4 @@ const FrameComponent5: FunctionComponent<FrameComponent5Type> = ({
   );
 };
 
-export default FrameComponent5;
+export default ReviewCardInfo;
