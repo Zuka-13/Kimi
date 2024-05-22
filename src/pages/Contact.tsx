@@ -29,7 +29,10 @@ const Contact: FunctionComponent = () => {
               />
             </div>
           </div>
+          
+          {/* Calling contact form */}
           <ContactForm />
+
           <div className="self-stretch h-[798px] relative text-[48px] text-white">
             <div className="absolute top-[793px] left-[365px] bg-orange-400 w-[872px] h-[5px] mix-blend-normal" />
             <h1 className="m-0 absolute top-[202px] left-[0px] text-inherit tracking-[-1px] leading-[90px] font-black font-inherit flex items-center w-[347px] mq1050:text-[38px] mq1050:leading-[72px] mq450:text-10xl mq450:leading-[54px]">

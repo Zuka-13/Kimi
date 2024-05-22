@@ -2,9 +2,9 @@ import { FunctionComponent } from "react";
 
 const ContactForm: FunctionComponent = () => {
   return (
-    <div className="flex flex-row items-start justify-between max-w-full min-h-[666px] text-left text-17xl text-white font-noto-sans mq450:h-auto">
+    <div className="flex flex-row items-start justify-between max-w-full text-left text-17xl text-white font-noto-sans">
       {/* Left Section */}
-      <div className="w-[60%] flex flex-row items-start justify-start min-h-[626px] max-w-full -right-[40px] mt-[9px] relative z-[1]">
+      <div className="w-[60%] flex flex-row items-start justify-start  max-w-full -right-[40px] mt-[9px] relative z-[1]">
        {/* Added styling with TailwindCSS added shadow, flex alignment and placing the div under the contact form div */}
         <div className="w-[368.4px] shadow-lg shadow-black/70 rounded-8xs bg-orange-100 flex flex-col items-start justify-start pt-[30px] pb-[30px] pr-[27.6px] pl-11 box-border gap-[35px] max-w-full z-[1]">
           <div className="flex flex-col items-start justify-start gap-[20px] max-w-full">
