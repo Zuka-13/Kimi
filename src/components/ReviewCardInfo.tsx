@@ -28,6 +28,8 @@ const ReviewCardInfo: FunctionComponent<ReviewCardInfoType> = ({
   }, [propWidth1]);
 
   return (
+    <section className="self-stretch flex flex-row items-start justify-center pt-0 pb-[104px] pr-5 pl-[50px] box-border max-w-full text-left text-8xl text-white font-inter mq450:pb-[29px] mq450:box-border mq1125:pb-11 mq1125:box-border mq1325:pl-[25px] mq1325:pb-[68px] mq1325:box-border">
+      <div className="w-[1075px] flex flex-col items-start justify-start gap-[49.5px] max-w-full mq800:gap-[25px]">
     <div
       className="w-[253px] h-[78px] flex flex-row items-start justify-start gap-[16px] text-left text-xs-8 text-gray-300 font-inter"
       style={frameDivStyle}
@@ -59,6 +61,8 @@ const ReviewCardInfo: FunctionComponent<ReviewCardInfoType> = ({
         </div>
       </div>
     </div>
+    </div>
+    </section>
   );
 };
 

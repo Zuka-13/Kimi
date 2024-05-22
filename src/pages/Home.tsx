@@ -4,7 +4,6 @@ import HeroSection from "../components/HeroSection";
 import Button from "../components/Button";
 import DestinationBrowse from "../components/DestinationBrowse";
 import DestinationCardTwo from "../components/DestinationCardTwo";
-import FrameComponent from "../components/FrequentlyAskedQuestions";
 import Footer1 from "../components/Footer1";
 import GiftCard from "../components/GiftCard";
 import ReviewSection from "../components/ReviewSection";
