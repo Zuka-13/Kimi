@@ -21,17 +21,17 @@ const ContactForm: FunctionComponent = () => {
               {/* Location */}
               <div className="flex flex-row items-center gap-[15px]">
                 <img className="h-6 w-[18.4px]" loading="lazy" alt="" src="/group-3893.svg" />
-                <div className="flex-1 font-black">Džemala Bijedića 160j, 7100 Sarajevo</div>
+                <div className="flex-1 font-black text-base">Džemala Bijedića 160j, 7100 Sarajevo</div>
               </div>
               {/* Phone number */}
               <div className="flex flex-row items-center gap-[15px]">
                 <img className="w-6 h-6" loading="lazy" alt="" src="/noun-phone-3612570-1.svg" />
-                <div className="flex-1 font-black">+387 61 111 111</div>
+                <div className="flex-1 font-black text-base">+387 61 111 111</div>
                 {/* Email */}
               </div>
               <div className="flex flex-row items-center gap-[15px]">
                 <img className="h-[26px] w-[26px]" loading="lazy" alt="" src="/noun-email-247564-1.svg" />
-                <div className="font-black">contact@kimi.com</div>
+                <div className="font-black text-base">contact@kimi.com</div>
               </div>
             </div>
           </div>
