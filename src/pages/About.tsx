@@ -143,7 +143,7 @@ const About: FunctionComponent = () => {
                   Review open positions and come join us!
                 </div>
               </div>
-
+              {/* Calling the button component and providing the text, routing and color for it */}
               <Button 
                 text="Join our team"
                 route={"/rent-your-car"}
@@ -152,34 +152,42 @@ const About: FunctionComponent = () => {
             </div>
           </div>
         </div>
+        {/* CSS adjustment using TailwindCSS for the placement of text and the photo */}
         <div className="self-stretch flex flex-row items-start justify-center gap-[62px] max-w-full mq950:gap-[31px] mq700:gap-[15px] mq925:flex-wrap">
+          {/* CSS adjustment using TailwindCSS for the placement of text and the photo for the first section */}
           <div className="flex flex-col items-start justify-start pt-9 px-0 pb-0 box-border min-w-[373px] max-w-full mq450:min-w-full mq925:flex-1">
+            {/* CSS adjustment between the text and the button */}
             <div className="flex flex-col items-start justify-start gap-[12.5px] max-w-full">
+              {/* CSS adjustment for the header text */}
               <div className="relative tracking-[-0.2px] leading-[28px] font-black inline-block min-w-[122px] mq450:text-base mq450:leading-[22px]">
                 Get in touch
               </div>
+              
+              {/* CSS adjustment using TailwindCSS for the placement of text and the photo for the second section */}
               <div className="flex flex-col items-start justify-start pt-0 px-0 pb-[11.5px] box-border max-w-full text-base-4">
-                <div className="relative leading-[24px]">{`Reach out to the Kimi newsdesk for press inquiries, `}</div>
-                <div className="relative leading-[24px] inline-block max-w-full z-[1]">{`the Kimi press kit, influencer outreach, investor `}</div>
-                <div className="relative leading-[24px] inline-block max-w-full z-[2]">{`relations information, and any other corporate `}</div>
-                <div className="relative leading-[24px] z-[3]">
+                <div className="relative leading-[24px]">
+                  Reach out to the Kimi newsdesk for press inquiries, <br />
+                  the Kimi press kit, influencer outreach, investor <br />
+                  relations information, and any other corporate <br />
                   inquiries you may have.
-                </div>
+                  </div>
               </div>
-             
+             {/* Calling the button component and providing the text, routing and color for it */}
               <Button 
                 text="Contact us"
                 route={"/contact-us"}
                 color={"rgb(251 188 4 / var(--tw-bg-opacity))"} />
-
             </div>
+
           </div>
+          {/* Adding the image on the right side and aplying CSS to it*/}
           <div className="flex-1 flex flex-row items-start justify-start relative min-w-[328px] max-w-full">
             <img
               className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full object-cover mix-blend-normal"
               alt=""
               src="/image-eiig1vx0-22@2x.png"
             />
+            {/* Adding the orange color overlay over the photo */}
             <div className="h-[283px] flex-1 relative bg-orange-500 mix-blend-normal max-w-full z-[1]" />
           </div>
         </div>
