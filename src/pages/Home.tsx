@@ -4,11 +4,11 @@ import HeroSection from "../components/HeroSection";
 import Button from "../components/Button";
 import DestinationBrowse from "../components/DestinationBrowse";
 import DestinationCardTwo from "../components/DestinationCardTwo";
-import Footer1 from "../components/Footer1";
 import GiftCard from "../components/GiftCard";
 import ReviewSection from "../components/ReviewSection";
 import CTABubble from "../components/CTABubble";
 import FrequentlyAskedQuestions from "../components/FrequentlyAskedQuestions";
+import FooterDesktop from "../components/FooterDesktop";
 
 const Home: FunctionComponent = () => {
 
@@ -124,7 +124,7 @@ const Home: FunctionComponent = () => {
       {/* Calling the FAQ component */}
       <FrequentlyAskedQuestions />
       {/* Calling the footer component */}
-      <Footer1 />
+      <FooterDesktop />
     </div>
   );
 };
