@@ -64,7 +64,9 @@ const Home: FunctionComponent = () => {
               {/* Calling the Button component and providing the text value which is
               going to be shown on the homepage, route to which page it routes and the
               color which is going to be shown for the button */}
-              <Button text="Go Offroad" route={"/destinations"} color={"#F1BF42"} />
+              <Button text="Go Offroad" 
+              route={"/destinations"} 
+              color={"#F1BF42"} />
             </div>
           </div>
           {/* Right section of the sector where the image is and enabling lazyloading on the same image */}
@@ -99,7 +101,10 @@ const Home: FunctionComponent = () => {
                 </div>
               </div>
               {/* CTA button routing to the rent your car page providing text, route and color */}
-                <Button text={"Start making money"} route={"/rent-your-car"} color={"#85bb65"} />
+                <Button 
+                text={"Start making money"} 
+                route={"/rent-your-car"} 
+                color={"#85bb65"} />
             </div>
           </div>
           {/* Image of the rent-out-car section */}
