@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import HeaderDesktop from "../components/HeaderDesktop";
 import FooterDesktop from "../components/FooterDesktop";
 
-const Contact: FunctionComponent = () => {
+const Register: FunctionComponent = () => {
   return (
     // Styling the background and the layout of the page using TailWindCSS
     <div className="w-full relative bg-darkslategray-200 flex flex-col items-start justify-start pt-0 px-0 pb-[50.3px] box-border gap-[50px] mix-blend-normal leading-[normal] tracking-[normal] mq450:gap-[31px] mq750:gap-[62px]">
@@ -18,4 +18,4 @@ const Contact: FunctionComponent = () => {
   );
 };
 
-export default Contact;
+export default Register;
