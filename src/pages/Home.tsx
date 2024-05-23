@@ -119,6 +119,7 @@ const Home: FunctionComponent = () => {
       <GiftCard />
       {/* Calling the Review component */}
       <ReviewSection />
+      {/* Calling the CTABubble component */}
       <CTABubble />
       {/* Calling the FAQ component */}
       <FrequentlyAskedQuestions />
