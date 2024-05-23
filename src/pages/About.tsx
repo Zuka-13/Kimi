@@ -122,6 +122,7 @@ const About: FunctionComponent = () => {
             {/* Orange overlay on the image on the lift side */}
             <div className="h-[283px] flex-1 relative bg-orange-500 mix-blend-normal max-w-full z-[1]" />
             </div>
+            
             {/* CSS styling of the text section on the right side */}
           <div className="w-[364px] flex flex-col items-start justify-start pt-[30px] px-0 pb-0 box-border min-w-[364px] max-w-full mq450:min-w-full mq925:flex-1">
             <div className="self-stretch flex flex-col items-start justify-start gap-[12.5px] max-w-full">
@@ -145,10 +146,11 @@ const About: FunctionComponent = () => {
                 text="Join our team"
                 route={"/rent-your-car"}
                 color={"rgb(251 188 4 / var(--tw-bg-opacity))"} />
-
+            </div>
             </div>
           </div>
         </div>
+        
         {/* CSS adjustment using TailwindCSS for the placement of text and the photo */}
         <div className="self-stretch flex flex-row items-start justify-center gap-[62px] max-w-full mq950:gap-[31px] mq700:gap-[15px] mq925:flex-wrap">
           {/* CSS adjustment using TailwindCSS for the placement of text and the photo for the first section */}
@@ -189,7 +191,7 @@ const About: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      </div>
+      
     </section>
       {/* Calling the footer component */}
       <Footer1 />
