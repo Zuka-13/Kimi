@@ -69,7 +69,7 @@ const About: FunctionComponent = () => {
         </div>
       </div>
     </div>
-    {/* Subheader title */}
+    {/* Subheader title  and CSS styiling for it*/}
         <div className="w-[1397px] flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
           <div className="flex flex-col items-start justify-start gap-[12px] max-w-full">
             <div className="flex flex-col items-start justify-start max-w-full">
@@ -79,7 +79,7 @@ const About: FunctionComponent = () => {
                 </div>
                 <div className="self-stretch h-1 relative bg-orange-400 mix-blend-normal" />
               </div>
-              {/* Subeader paragraph */}
+              {/* Subeader paragraph and CSS styling for it */}
               <div className="relative leading-[24px] inline-block max-w-full">
                 Kimi is the world’s best car sharing marketplace, where you can book the perfect car for <br />
                 wherever you’re going from a vibrant community of trusted hosts across the US, UK, Canada,<br />
@@ -88,20 +88,11 @@ const About: FunctionComponent = () => {
                 choose from an extraordinary, totally unique selection of nearby vehicles shared by local<br />
                 hosts. Entrepreneurs can take the wheel of their futures by becoming hosts and building car<br />
                 sharing businesses on Kimi, leveraging our established platform to scale their businesses to <br />
-                meet their goals.
-                 </div>
-              
-              <div className="relative leading-[24px] inline-block min-w-[123px] z-[7]">
-              </div>
-            </div>
-            <div className="flex flex-col items-start justify-start max-w-full">
-              <div className="relative leading-[24px] inline-block max-w-full">With an unwavering mission of putting the world’s cars to better use, Kimi unlocks 
-              </div>
-
-              <div className="relative leading-[24px] inline-block min-w-[36px]">
+                meet their goals. <br /><br />
+                With an unwavering mission of putting the world’s cars to better use, Kimi unlocks <br />
                 seat.
+                 </div>
               </div>
-            </div>
           </div>
         </div>
         <SubheroSection />
