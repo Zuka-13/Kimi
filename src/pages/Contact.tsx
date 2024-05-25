@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import HeaderDesktop from "../components/HeaderDesktop";
 import ContactForm from "../components/ContactForm";
-import Footer from "../components/Footer";
+import Footer from "../components/FooterDesktop";
 
 const Contact: FunctionComponent = () => {
   return (

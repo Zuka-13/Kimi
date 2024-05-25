@@ -10,7 +10,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import SearchComponent from "../components/SearchComponent";
 import MakeModel from "../components/MakeModel";
-import Footer from "../components/Footer";
+import Footer from "../components/FooterDesktop";
 
 const Destinations: FunctionComponent = () => {
   const navigate = useNavigate();

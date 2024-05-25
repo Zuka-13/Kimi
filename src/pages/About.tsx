@@ -1,7 +1,7 @@
 import { FunctionComponent, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import SubheroSection from "../components/SubheroSection";
-import Footer1 from "../components/Footer1";
+import Footer from "../components/FooterDesktop";
 import HeaderDesktop from "../components/HeaderDesktop";
 import Button from "../components/Button";
 
@@ -194,7 +194,7 @@ const About: FunctionComponent = () => {
       
     </section>
       {/* Calling the footer component */}
-      <Footer1 />
+      <Footer />
     </div>
   );
 };
