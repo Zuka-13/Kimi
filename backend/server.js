@@ -1,5 +1,6 @@
 // server.js
 const express = require('express');
+const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const sequelize = require('./db');
 const authRoutes = require('./routes/authRoutes');
@@ -9,7 +10,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.json());
+app.use(bodyParser.json());
 
 app.use('/api/auth', authRoutes);
 
