@@ -15,7 +15,7 @@ const Home: FunctionComponent = () => {
  
 
   return (
-    <div className="w-full relative bg-darkslategray-200 flex flex-col items-start justify-start pt-0 px-0 pb-[19.3px] box-border mix-blend-normal leading-[normal] tracking-[normal]">
+    <div className="w-full relative bg-darkslategray-200 flex flex-col items-center justify-center pt-0 px-0 pb-[19.3px] box-border mix-blend-normal leading-[normal] tracking-[normal]">
       <div className="w-[376px] h-7 absolute !m-[0] right-[489px] bottom-[659px] bg-orange-200 mix-blend-normal" />
       {/* Header Section */} 
       <HeaderDesktop />

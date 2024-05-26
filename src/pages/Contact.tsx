@@ -6,11 +6,11 @@ import Footer from "../components/FooterDesktop";
 const Contact: FunctionComponent = () => {
   return (
     // Styling the background and the layout of the page using TailWindCSS
-    <div className="w-full relative bg-darkslategray-200 flex flex-col items-start justify-start pt-0 px-0 pb-[50.3px] box-border gap-[50px] mix-blend-normal leading-[normal] tracking-[normal] mq450:gap-[31px] mq750:gap-[62px]">
+    <div className="w-full relative bg-darkslategray-200 flex flex-col items-center justify-center pt-0 px-0 pb-[50.3px] box-border gap-[50px] mix-blend-normal leading-[normal] tracking-[normal] mq450:gap-[31px] mq750:gap-[62px]">
       {/* Calling the header module */}
       <HeaderDesktop />
       <main className="w-[1401.4px] flex flex-row items-start justify-start pt-[120px] px-[73px] box-border max-w-full lg:pl-9 lg:pr-9 lg:box-border">
-        <section className="flex-1 flex flex-col items-end justify-start gap-[127.5px] max-w-full text-left text-54xl-7 text-black font-noto-serif lg:gap-[64px] mq450:gap-[16px] mq750:gap-[32px]">
+        <section className="flex-1 flex flex-col items-center justify-start gap-[127.5px] max-w-full text-left text-54xl-7 text-black font-noto-serif lg:gap-[64px] mq450:gap-[16px] mq750:gap-[32px]">
           <div className="w-[990.8px] flex flex-row items-start justify-end py-0 pr-[59.4px] pl-[59px] box-border max-w-full mq1050:pl-[29px] mq1050:pr-[29px] mq1050:box-border">
             <div className="flex-1 bg-white flex flex-row items-start justify-end py-[21px] px-[69px] box-border relative min-h-[309px] max-w-full mq750:pl-[34px] mq750:pr-[34px] mq750:box-border">
               <img

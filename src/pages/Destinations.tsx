@@ -56,7 +56,7 @@ const Destinations: FunctionComponent = () => {
   }, []);
 
   return (
-    <div className="w-full relative bg-darkslategray-200 flex flex-col items-start justify-start pt-px px-0 pb-[0.3px] box-border gap-[0.5px] mix-blend-normal leading-[normal] tracking-[normal]">
+    <div className="w-full relative bg-darkslategray-200 flex flex-col items-center justify-center pt-px px-0 pb-[0.3px] box-border gap-[0.5px] mix-blend-normal leading-[normal] tracking-[normal]">
       <div className="self-stretch flex flex-col items-end justify-start py-0 px-0 box-border max-w-full">
         <header className="self-stretch bg-kimi-yellow box-border flex flex-row items-start justify-start pt-[31px] px-5 pb-[18px] gap-[57px] mix-blend-normal max-w-full z-[2] text-center text-xl text-black font-poppins border-b-[1px] border-solid border-silver-300 mq750:gap-[28px]">
           <img

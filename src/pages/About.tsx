@@ -33,9 +33,9 @@ const About: FunctionComponent = () => {
   }, [navigate]);
 
   return (
-    <div className="w-full relative bg-darkslategray-200 flex flex-col items-end justify-start pt-0 px-0 pb-[21.3px] box-border gap-[99px] mix-blend-normal leading-[normal] tracking-[normal] mq450:gap-[25px] mq925:gap-[49px]">
+    <div className="w-full relative bg-darkslategray-200 flex flex-col items-center justify-start pt-0 px-0 pb-[21.3px] box-border gap-[99px] mix-blend-normal leading-[normal] tracking-[normal] mq450:gap-[25px] mq925:gap-[49px]">
       <HeaderDesktop />
-      <section className="self-stretch flex flex-col items-end justify-start pt-0 px-0 pb-[14.5px] box-border gap-[84px] max-w-full text-left text-base-4 text-white font-inter mq450:gap-[21px] mq925:gap-[42px]">
+      <section className="self-stretch flex flex-col items-center justify-start pt-0 px-0 pb-[14.5px] box-border gap-[84px] max-w-full text-left text-base-4 text-white font-inter mq450:gap-[21px] mq925:gap-[42px]">
         <div className="w-[1254px] flex flex-row items-start justify-center pt-0 px-5 pb-[18.5px] box-border max-w-full text-left text-54xl-7 text-gray-300 font-noto-serif">
       {/* Header image */}
       <div className="w-[872px] flex flex-row items-start justify-start relative max-w-full">
