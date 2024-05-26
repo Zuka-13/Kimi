@@ -39,45 +39,7 @@ const Home: FunctionComponent = () => {
           </div>
         </div>
       </section>
-      {/* Section with CSS code via TailwindCSS for the "Spring collection" sector with a CTA */}
-      <section className="self-stretch flex flex-row items-start justify-start pt-0 pb-[69.1px] pr-2 pl-px box-border max-w-full text-left text-8xl text-gray-300 font-inter mq450:pb-[45px] mq450:box-border">
-        {/* Left section of the sector where the white background is with a gradient color and sizing using TailwindCSS*/}
-        <div className="flex-1 [background:linear-gradient(90deg,_#fbf9f6_50%,_rgba(0,_0,_0,_0)_50%)] flex flex-row items-start justify-between pt-12 pb-[59.6px] pr-[221px] pl-[196.5px] box-border mix-blend-normal max-w-full gap-[20px] mq450:pt-[31px] mq450:px-5 mq450:pb-[39px] mq450:box-border mq800:pl-[98px] mq800:pr-[110px] mq800:box-border mq1325:flex-wrap mq1325:justify-center">
-          <div className="w-[407px] flex flex-col items-start justify-start pt-[33.6px] px-0 pb-0 box-border min-w-[407px] max-w-full shrink-0 mq1125:min-w-full mq1325:flex-1">
-            {/* Sizing of the button */}
-            <div className="self-stretch flex flex-col items-start justify-start gap-[40.1px] max-w-full shrink-0 mq450:gap-[20px]">
-              {/* Padding of the paragaph */}
-              <div className="self-stretch flex flex-col items-start justify-start gap-[16px] max-w-full">
-                {/* Styling of the title text of the section and the text of the title */}
-                <div className="relative tracking-[-0.2px] leading-[32px] font-black inline-block max-w-full mq450:text-3xl mq450:leading-[26px]">
-                  The spring 4x4 collections
-                </div>
-                {/* Styling of the paragraph text */}
-                <div className="self-stretch flex flex-col items-start justify-start text-base-4">
-                  {/* Text of the paragraph */}
-                  <div className="relative leading-[24px]">
-                  Freshen up on the soaring selection of SUV vehicles out<br/>
-                  and conquer a mountain or offbeat road trail with a 4x4
-                  </div>
-                </div>
-              </div>
-              {/* Calling the Button component and providing the text value which is
-              going to be shown on the homepage, route to which page it routes and the
-              color which is going to be shown for the button */}
-              <Button text="Go Offroad" 
-              route={"/destinations"} 
-              color={"#F1BF42"} />
-            </div>
-          </div>
-          {/* Right section of the sector where the image is and enabling lazyloading on the same image */}
-          <img
-            className="h-[253.3px] w-[448.9px] relative overflow-hidden shrink-0 object-cover mix-blend-normal max-w-full mq1325:flex-1"
-            loading="lazy"
-            alt="African american male person standing in front of 3 cars"
-            src="/image-eiig1vx0@2x.png"
-          />
-        </div>
-      </section>
+      
       {/* Calling the component DestinationBrowse where we have 4 cards which represent 4 cities that are available to rent cars from */}
       <DestinationBrowse />
       {/* Calling the component DestinationBrowse which is a CTA to the destinations page where the user can search available cars from each region */}

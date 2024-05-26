@@ -28,8 +28,8 @@ const DestinationBrowse: FunctionComponent = () => {
   return (
     <section className="self-stretch flex flex-row items-start justify-center pt-0 pb-[113.7px] pr-5 pl-[30px] box-border max-w-full text-left text-xl-2 text-white font-inter mq800:pb-[74px] mq800:box-border">
       <div className="w-[996.2px] flex flex-col items-start justify-start gap-[97.3px] max-w-full mq800:gap-[24px] mq1125:gap-[49px]">
-        <div className="w-[853.5px] flex flex-col items-start justify-start gap-[21.1px] max-w-full">
-          <div className="relative tracking-[-0.2px] leading-[28px] font-black mq450:text-base mq450:leading-[22px]">
+        <div className="w-[853.5px] flex flex-col items-center justify-center gap-[21.1px] max-w-full">
+          <div className="relative tracking-[-0.2px] leading-[28px] text-16xl font-black mq450:text-base mq450:leading-[22px]">
             Browse by destination
           </div>
           <div className="self-stretch flex flex-row items-start justify-end max-w-full text-base-1 text-kimi-yellow">
