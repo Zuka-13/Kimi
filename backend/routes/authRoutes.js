@@ -1,25 +1,31 @@
-// routes/authRoutes.js
+const jwt = require('jsonwebtoken');
+const bcrypt = require('bcrypt');
 const express = require('express');
 const router = express.Router();
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
 const User = require('../models/User');
+require('dotenv').config(); // Ensure dotenv is loaded
 
 // User registration
 router.post('/register', async (req, res) => {
     try {
-        const { name, surname, email, password } = req.body;
+        const { firstName, lastName, email, password } = req.body;
+
+        // Check if user already exists
+        const existingUser = await User.findOne({ where: { email } });
+        if (existingUser) {
+            return res.status(400).json({ success: false, message: 'Email already in use' });
+        }
 
         // Hash the password
         const hashedPassword = await bcrypt.hash(password, 10);
 
         // Create a new user
-        const user = await User.create({ name, surname, email, password: hashedPassword });
+        const user = await User.create({ firstName, lastName, email, password: hashedPassword });
 
-        res.status(201).json({ message: 'User registered successfully', user });
+        res.status(201).json({ success: true, message: 'User registered successfully', user });
     } catch (error) {
         console.error('Error registering user:', error);
-        res.status(500).json({ message: 'Internal server error' });
+        res.status(500).json({ success: false, message: 'Internal server error' });
     }
 });
 
@@ -31,22 +37,22 @@ router.post('/login', async (req, res) => {
         // Find user by email
         const user = await User.findOne({ where: { email } });
         if (!user) {
-            return res.status(404).json({ message: 'User not found' });
+            return res.status(404).json({ success: false, message: 'User not found' });
         }
 
         // Check password
         const passwordMatch = await bcrypt.compare(password, user.password);
         if (!passwordMatch) {
-            return res.status(401).json({ message: 'Incorrect password' });
+            return res.status(401).json({ success: false, message: 'Incorrect password' });
         }
 
         // Generate JWT token
         const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET, { expiresIn: '1h' });
 
-        res.status(200).json({ message: 'Login successful', token });
+        res.status(200).json({ success: true, message: 'Login successful', token });
     } catch (error) {
         console.error('Error logging in user:', error);
-        res.status(500).json({ message: 'Internal server error' });
+        res.status(500).json({ success: false, message: 'Internal server error' });
     }
 });
 

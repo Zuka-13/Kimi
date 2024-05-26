@@ -135,9 +135,8 @@ $RECYCLE.BIN/
 # Node.js
 node_modules/
 
-# Uncomment the following lines if you're using a Python project
-# PEP 582: __pypackages__ directory
-# .__pypackages__/
+# Environment variables file
+.env
 
-# Visual Studio 2022 user-specific files
-## .gitignore should ignore all of these files for each user
+# Log files
+*.log
