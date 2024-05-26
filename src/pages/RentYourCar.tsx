@@ -3,6 +3,7 @@ import FinancialFuture from "../components/FinancialFuture";
 import DivSeoPagesE9c47y from "../components/DivSeoPagesE9c47y";
 import CallToActionRentOutCar from "../components/CallToActionRentOutCar";
 import HeaderDesktop from "../components/HeaderDesktop";
+import Button from "../components/Button";
 
 const RentYourCar: FunctionComponent = () => {
   
@@ -22,11 +23,10 @@ const RentYourCar: FunctionComponent = () => {
             </div>
           </div>
         </div>
-        <div className="rounded-lg bg-kimi-yellow flex flex-row items-start justify-start py-0 pr-[17px] pl-[18px] mix-blend-normal whitespace-nowrap text-mid-6 text-black border-[1px] border-solid border-blueviolet">
-          <b className="relative leading-[49px] inline-block min-w-[98px]">
-            Get started
-          </b>
-        </div>
+        
+        <Button text={"Get Started"}
+        route={"../login"}
+        color={"85bb65"} />
       </div>
     </section>
       <img
