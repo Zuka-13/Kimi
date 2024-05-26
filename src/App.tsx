@@ -10,6 +10,8 @@ import RentYourCar from "./pages/RentYourCar";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Destinations from "./pages/Destinations";
+import Login from "./pages/Login"
+import Register from "./pages/Register"
 
 function App() {
   const action = useNavigationType();
@@ -70,6 +72,8 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
       <Route path="/destinations" element={<Destinations />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
     </Routes>
   );
 }
