@@ -132,6 +132,9 @@ $RECYCLE.BIN/
 # IIS Express configuration file
 **/iisexpress/
 
+# Node.js
+node_modules/
+
 # Uncomment the following lines if you're using a Python project
 # PEP 582: __pypackages__ directory
 # .__pypackages__/
