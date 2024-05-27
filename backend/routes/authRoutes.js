@@ -3,12 +3,12 @@ const bcrypt = require('bcrypt');
 const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
-require('dotenv').config(); // Ensure dotenv is loaded
+require('dotenv').config();
 
 // User registration
 router.post('/register', async (req, res) => {
     try {
-        const { firstName, lastName, email, password } = req.body;
+        const { name, surname, email, password } = req.body;
 
         // Check if user already exists
         const existingUser = await User.findOne({ where: { email } });
@@ -20,7 +20,7 @@ router.post('/register', async (req, res) => {
         const hashedPassword = await bcrypt.hash(password, 10);
 
         // Create a new user
-        const user = await User.create({ firstName, lastName, email, password: hashedPassword });
+        const user = await User.create({ name, surname, email, password: hashedPassword });
 
         res.status(201).json({ success: true, message: 'User registered successfully', user });
     } catch (error) {

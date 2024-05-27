@@ -3,8 +3,8 @@ import HeaderDesktop from "../components/HeaderDesktop";
 import FooterDesktop from "../components/FooterDesktop";
 
 const Register: React.FC = () => {
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
+    const [name, setName] = useState('');
+    const [surname, setSurname] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
@@ -23,7 +23,7 @@ const Register: React.FC = () => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ firstName, lastName, email, password })
+                body: JSON.stringify({ name, surname, email, password })
             });
 
             if (!response.ok) {
@@ -54,19 +54,19 @@ const Register: React.FC = () => {
                                     <input
                                         type="text"
                                         className="block border border-gray-300 w-full p-3 rounded mb-4"
-                                        name="first_name"
+                                        name="name"
                                         placeholder="First Name"
-                                        value={firstName}
-                                        onChange={(e) => setFirstName(e.target.value)}
+                                        value={name}
+                                        onChange={(e) => setName(e.target.value)}
                                         required
                                     />
                                     <input
                                         type="text"
                                         className="block border border-gray-300 w-full p-3 rounded mb-4"
-                                        name="last_name"
+                                        name="surname"
                                         placeholder="Last Name"
-                                        value={lastName}
-                                        onChange={(e) => setLastName(e.target.value)}
+                                        value={surname}
+                                        onChange={(e) => setSurname(e.target.value)}
                                         required
                                     />
                                     <input
@@ -105,7 +105,7 @@ const Register: React.FC = () => {
                                             required
                                         />
                                         <label htmlFor="age_confirmation" className="text-gray-600">
-                                            I confirm that I am at least 18 years old
+                                            I confirm that I am at least 18 years of age
                                         </label>
                                     </div>
                                     <button
