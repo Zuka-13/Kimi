@@ -146,19 +146,20 @@ const Register: React.FC = () => {
                                                 </a>
                                                 .
                                             </p>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="text-grey-900 mt-6 text-center">
+                                            <div className="text-grey-900 mt-6 text-center">
                             Already have an account?{' '}
                             <a className="font-bold text-purple-blue-500" href="../login/">
                                 Log in
                             </a>
                             .
                         </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        
                     </div>
                 </section>
             </main>
