@@ -47,7 +47,7 @@ const Login: React.FC = () => {
                                             id="email"
                                             type="email"
                                             placeholder="mail@loopple.com"
-                                            className="flex items-center w-full px-5 py-4 mr-2 text-sm font-medium outline-none focus:bg-grey-400 mb-7 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl"
+                                            className="flex items-center w-full px-5 py-4 mr-2 text-sm font-medium outline-none focus:bg-grey-400 mb-7 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl border border-gray-300"
                                             value={email}
                                             onChange={(e) => setEmail(e.target.value)}
                                             required
@@ -57,7 +57,7 @@ const Login: React.FC = () => {
                                             id="password"
                                             type="password"
                                             placeholder="Enter a password"
-                                            className="flex items-center w-full px-5 py-4 mb-5 mr-2 text-sm font-medium outline-none focus:bg-grey-400 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl"
+                                            className="flex items-center w-full px-5 py-4 mb-5 mr-2 text-sm font-medium outline-none focus:bg-grey-400 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl border border-gray-300"
                                             value={password}
                                             onChange={(e) => setPassword(e.target.value)}
                                             required
