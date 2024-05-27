@@ -55,13 +55,13 @@ const Register: React.FC = () => {
                                         <h3 className="mb-3 text-14xl pb-16 font-extrabold text-dark-grey-900">Sign Up</h3>
 
                                         {error && <div className="text-red-500 mb-4">{error}</div>}
-                                        <div className="items-center align-center border border-gray-300 rounded-lg p-6">
+                                        <div className="items-center align-center border border-gray-300 rounded-lg p-2">
                                             <label htmlFor="name" className="mb-2 text-sm py-2 text-center text-grey-900">First Name*</label>
                                             <input
                                                 id="name"
                                                 type="text"
                                                 placeholder="First Name"
-                                                className="flex items-center w-full px-5 py-4 mb-7 mr-2 text-sm font-medium outline-none focus:bg-grey-400 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl border border-gray-300"
+                                                className="flex items-center w-full px-5 py-4 mb-7 mr-2 text-sm font-medium outline-none focus:bg-grey-400 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl border border-gray-300 "
                                                 value={name}
                                                 onChange={(e) => setName(e.target.value)}
                                                 required
