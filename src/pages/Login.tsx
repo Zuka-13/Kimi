@@ -32,6 +32,8 @@ const Login: React.FC = () => {
             <HeaderDesktop />
             <main className="w-[701.4px] flex flex-row items-center justify-center pt-[50px] px-[73px] box-border max-w-full lg:pl-9 lg:pr-9 lg:box-border">
                 <section className="flex-1 flex flex-col items-center justify-center gap-[127.5px] max-w-full text-left text-54xl-7 text-black font-noto-serif lg:gap-[64px] mq450:gap-[16px] mq750:gap-[32px]">
+                    
+                    {/* Login Sector */}
 
                     <div className="container flex flex-col mx-auto bg-white rounded-lg pt-12 my-5">
                         <div className="flex justify-center w-full h-full my-auto xl:gap-14 lg:justify-normal md:gap-5 draggable">

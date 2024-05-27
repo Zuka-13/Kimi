@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import HeaderDesktop from "../components/HeaderDesktop";
 import FooterDesktop from "../components/FooterDesktop";
+import { useNavigate } from "react-router-dom";
 
 const Register: React.FC = () => {
     const [name, setName] = useState('');
@@ -9,6 +10,7 @@ const Register: React.FC = () => {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
+    const navigate = useNavigate();
 
     const handleSubmit = async (event: React.FormEvent) => {
         event.preventDefault();
@@ -33,7 +35,7 @@ const Register: React.FC = () => {
             }
 
             alert('User registered successfully');
-            // Optionally, redirect to login page or do something else
+            navigate('/login');
         } catch (error) {
             setError('An error occurred during registration');
             console.error('Registration error:', error);
@@ -41,98 +43,118 @@ const Register: React.FC = () => {
     };
 
     return (
-        <div className="w-full relative bg-darkslategray-200 flex flex-col items-start justify-start pt-0 px-0 pb-[50.3px] box-border gap-[50px] mix-blend-normal leading-[normal] tracking-[normal] mq450:gap-[31px] mq750:gap-[62px]">
+        <div className="w-full relative bg-darkslategray-200 flex flex-col items-center justify-center pt-0 px-0 pb-[50.3px] box-border gap-[50px] mix-blend-normal leading-[normal] tracking-[normal] mq450:gap-[31px] mq750:gap-[62px]">
             <HeaderDesktop />
             <main className="w-[1401.4px] flex flex-row items-start justify-start pt-[120px] px-[73px] box-border max-w-full lg:pl-9 lg:pr-9 lg:box-border">
-                <section className="flex-1 flex flex-col items-end justify-start gap-[127.5px] max-w-full text-left text-54xl-7 text-black font-noto-serif lg:gap-[64px] mq450:gap-[16px] mq750:gap-[32px]">
-                    <div className="bg-gray-200 min-h-screen flex flex-col">
-                        <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
-                            <div className="bg-white px-6 py-8 rounded shadow-md text-black w-full">
-                                <h1 className="mb-8 text-3xl text-center">Sign up</h1>
-                                {error && <div className="text-red-500 mb-4">{error}</div>}
-                                <form onSubmit={handleSubmit}>
-                                    <input
-                                        type="text"
-                                        className="block border border-gray-300 w-full p-3 rounded mb-4"
-                                        name="name"
-                                        placeholder="First Name"
-                                        value={name}
-                                        onChange={(e) => setName(e.target.value)}
-                                        required
-                                    />
-                                    <input
-                                        type="text"
-                                        className="block border border-gray-300 w-full p-3 rounded mb-4"
-                                        name="surname"
-                                        placeholder="Last Name"
-                                        value={surname}
-                                        onChange={(e) => setSurname(e.target.value)}
-                                        required
-                                    />
-                                    <input
-                                        type="email"
-                                        className="block border border-gray-300 w-full p-3 rounded mb-4"
-                                        name="email"
-                                        placeholder="Email"
-                                        value={email}
-                                        onChange={(e) => setEmail(e.target.value)}
-                                        required
-                                    />
-                                    <input
-                                        type="password"
-                                        className="block border border-gray-300 w-full p-3 rounded mb-4"
-                                        name="password"
-                                        placeholder="Password"
-                                        value={password}
-                                        onChange={(e) => setPassword(e.target.value)}
-                                        required
-                                    />
-                                    <input
-                                        type="password"
-                                        className="block border border-gray-300 w-full p-3 rounded mb-4"
-                                        name="confirm_password"
-                                        placeholder="Confirm Password"
-                                        value={confirmPassword}
-                                        onChange={(e) => setConfirmPassword(e.target.value)}
-                                        required
-                                    />
-                                    <div className="flex items-center mb-4">
-                                        <input
-                                            type="checkbox"
-                                            className="mr-2"
-                                            name="age_confirmation"
-                                            id="age_confirmation"
-                                            required
-                                        />
-                                        <label htmlFor="age_confirmation" className="text-gray-600">
-                                            I confirm that I am at least 18 years of age
-                                        </label>
-                                    </div>
-                                    <button
-                                        type="submit"
-                                        className="w-full text-center py-3 rounded bg-green-500 text-white hover:bg-green-700 focus:outline-none my-1"
-                                    >
-                                        Create Account
-                                    </button>
-                                </form>
-                                <div className="text-center text-sm text-gray-600 mt-4">
-                                    By signing up, you agree to the
-                                    <a className="no-underline border-b border-gray-600 text-gray-600" href="#">
-                                        Terms of Service
-                                    </a>{' '}
-                                    and
-                                    <a className="no-underline border-b border-gray-600 text-gray-600" href="#">
-                                        Privacy Policy
-                                    </a>
+                <section className="flex-1 flex flex-col items-center justify-center gap-[127.5px] max-w-full text-left text-54xl-7 text-black font-noto-serif lg:gap-[64px] mq450:gap-[16px] mq750:gap-[32px]">
+
+                    <div className="flex flex-col items-center w-[600px] mx-auto bg-white rounded-lg pt-12 my-5">
+                        <div className="flex justify-center items-center w-[500px] h-full my-auto xl:gap-14 lg:justify-normal md:gap-5 draggable">
+                            <div className="flex items-center justify-center w-full lg:p-12">
+                                <div className="flex items-center xl:p-10">
+                                    <form className="flex flex-col w-full h-full pb-6 text-center bg-white rounded-3xl" onSubmit={handleSubmit}>
+                                        <h3 className="mb-3 text-14xl font-extrabold text-dark-grey-900">Sign Up</h3>
+
+                                        {error && <div className="text-red-500 mb-4">{error}</div>}
+                                        <div className="items-center align-center">
+                                            <label htmlFor="name" className="mb-2 text-sm text-center text-grey-900">First Name*</label>
+                                            <input
+                                                id="name"
+                                                type="text"
+                                                placeholder="First Name"
+                                                className="flex items-center w-full px-5 py-4 mb-7 mr-2 text-sm font-medium outline-none focus:bg-grey-400 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl"
+                                                value={name}
+                                                onChange={(e) => setName(e.target.value)}
+                                                required
+                                            />
+
+                                            <label htmlFor="surname" className="mb-2 text-sm text-center text-grey-900">Last Name*</label>
+                                            <input
+                                                id="surname"
+                                                type="text"
+                                                placeholder="Last Name"
+                                                className="flex items-center w-full px-5 py-4 mb-7 mr-2 text-sm font-medium outline-none focus:bg-grey-400 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl"
+                                                value={surname}
+                                                onChange={(e) => setSurname(e.target.value)}
+                                                required
+                                            />
+
+                                            <label htmlFor="email" className="mb-2 text-sm text-center text-grey-900">Email*</label>
+                                            <input
+                                                id="email"
+                                                type="email"
+                                                placeholder="mail@loopple.com"
+                                                className="flex items-center w-full px-5 py-4 mb-7 mr-2 text-sm font-medium outline-none focus:bg-grey-400 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl"
+                                                value={email}
+                                                onChange={(e) => setEmail(e.target.value)}
+                                                required
+                                            />
+
+                                            <label htmlFor="password" className="mb-2 text-sm text-center text-grey-900">Password*</label>
+                                            <input
+                                                id="password"
+                                                type="password"
+                                                placeholder="Enter a password"
+                                                className="flex items-center w-full px-5 py-4 mb-7 mr-2 text-sm font-medium outline-none focus:bg-grey-400 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl"
+                                                value={password}
+                                                onChange={(e) => setPassword(e.target.value)}
+                                                required
+                                            />
+
+                                            <label htmlFor="confirm_password" className="mb-2 text-sm text-center text-grey-900">Confirm Password*</label>
+                                            <input
+                                                id="confirm_password"
+                                                type="password"
+                                                placeholder="Confirm Password"
+                                                className="flex items-center w-full px-5 py-4 mb-7 mr-2 text-sm font-medium outline-none focus:bg-grey-400 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl"
+                                                value={confirmPassword}
+                                                onChange={(e) => setConfirmPassword(e.target.value)}
+                                                required
+                                            />
+
+                                            <div className="flex items-center mb-8">
+                                                <input
+                                                    type="checkbox"
+                                                    className="mr-2"
+                                                    name="age_confirmation"
+                                                    id="age_confirmation"
+                                                    required
+                                                />
+                                                <label htmlFor="age_confirmation" className="text-grey-900">
+                                                    I confirm that I am at least 18 years old
+                                                </label>
+                                            </div>
+
+                                            <button
+                                                type="submit"
+                                                className="w-full px-6 py-5 mb-5 text-sm font-bold leading-none text-white transition duration-300 md:w-96 rounded-2xl hover:bg-purple-blue-600 focus:ring-4 focus:ring-purple-blue-100 bg-purple-blue-500"
+                                            >
+                                                Create Account
+                                            </button>
+
+                                            <p className="text-sm leading-relaxed text-grey-900">
+                                                By signing up, you agree to the{' '}
+                                                <a className="font-bold text-grey-700" href="#">
+                                                    Terms of Service
+                                                </a>{' '}
+                                                and{' '}
+                                                <a className="font-bold text-grey-700" href="#">
+                                                    Privacy Policy
+                                                </a>
+                                                .
+                                            </p>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
-                            <div className="text-gray-600 mt-6">
-                                Already have an account?
-                                <a className="no-underline border-b border-blue-500 text-blue-500" href="../login/">
-                                    Log in
-                                </a>
-                                .
-                            </div>
+                        </div>
+
+                        <div className="text-grey-900 mt-6 text-center">
+                            Already have an account?{' '}
+                            <a className="font-bold text-purple-blue-500" href="../login/">
+                                Log in
+                            </a>
+                            .
                         </div>
                     </div>
                 </section>
