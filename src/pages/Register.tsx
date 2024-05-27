@@ -52,7 +52,7 @@ const Register: React.FC = () => {
                             <div className="flex items-center justify-center w-full lg:p-12">
                                 <div className="flex items-center xl:p-10">
                                     <form className="flex flex-col w-full h-full pb-6 text-center bg-white rounded-3xl" onSubmit={handleSubmit}>
-                                        <h3 className="mb-3 text-14xl font-extrabold text-dark-grey-900">Sign Up</h3>
+                                        <h3 className="mb-3 text-14xl pb-16 font-extrabold text-dark-grey-900">Sign Up</h3>
 
                                         {error && <div className="text-red-500 mb-4">{error}</div>}
                                         <div className="items-center align-center border border-gray-300 rounded-lg p-6">
