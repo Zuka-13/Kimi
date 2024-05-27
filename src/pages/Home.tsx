@@ -7,8 +7,9 @@ import DestinationCardTwo from "../components/DestinationCardTwo";
 import GiftCard from "../components/GiftCard";
 import ReviewSection from "../components/ReviewSection";
 import CTABubble from "../components/CTABubble";
-import FrequentlyAskedQuestions from "../components/FrequentlyAskedQuestions";
+
 import FooterDesktop from "../components/FooterDesktop";
+import { Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon } from '@chakra-ui/react'
 
 const Home: FunctionComponent = () => {
 
@@ -84,7 +85,7 @@ const Home: FunctionComponent = () => {
       {/* Calling the CTABubble component */}
       <CTABubble />
       {/* Calling the FAQ component */}
-      <FrequentlyAskedQuestions />
+
       {/* Calling the footer component */}
       <FooterDesktop />
     </div>
