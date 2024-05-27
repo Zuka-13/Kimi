@@ -46,7 +46,7 @@ const Register: React.FC = () => {
         <div className="w-full relative bg-darkslategray-200 flex flex-col items-center justify-center pt-0 px-0 pb-[50.3px] box-border gap-[50px] mix-blend-normal leading-[normal] tracking-[normal] mq450:gap-[31px] mq750:gap-[62px]">
             <HeaderDesktop />
             <main className="w-[1401.4px] flex flex-row items-start justify-start pt-[120px] px-[73px] box-border max-w-full lg:pl-9 lg:pr-9 lg:box-border">
-                <section className="flex-1 flex flex-col items-center justify-center gap-[127.5px] max-w-full text-left text-54xl-7 text-black font-noto-serif lg:gap-[64px] mq450:gap-[16px] mq750:gap-[32px]">
+                <section className="flex-1 flex flex-col items-center justify-center gap-[127.5px] max-w-full text-left text-12xl text-black font-noto-serif lg:gap-[64px] mq450:gap-[16px] mq750:gap-[32px]">
 
                     <div className="flex flex-col items-center w-[600px] mx-auto bg-white rounded-lg pt-12 my-5">
                         <div className="flex justify-center items-center w-[500px] h-full my-auto xl:gap-14 lg:justify-normal md:gap-5 draggable">
@@ -57,7 +57,7 @@ const Register: React.FC = () => {
 
                                         {error && <div className="text-red-500 mb-4">{error}</div>}
                                         <div className="items-center align-center">
-                                            <label htmlFor="name" className="mb-2 text-sm text-center text-grey-900">First Name*</label>
+                                            <label htmlFor="name" className="mb-2 text-sm py-2 text-center text-grey-900">First Name*</label>
                                             <input
                                                 id="name"
                                                 type="text"
@@ -68,7 +68,7 @@ const Register: React.FC = () => {
                                                 required
                                             />
 
-                                            <label htmlFor="surname" className="mb-2 text-sm text-center text-grey-900">Last Name*</label>
+                                            <label htmlFor="surname" className="mb-2 text-sm py-2 text-center text-grey-900">Last Name*</label>
                                             <input
                                                 id="surname"
                                                 type="text"
@@ -79,7 +79,7 @@ const Register: React.FC = () => {
                                                 required
                                             />
 
-                                            <label htmlFor="email" className="mb-2 text-sm text-center text-grey-900">Email*</label>
+                                            <label htmlFor="email" className="mb-2 text-sm py-2 text-center text-grey-900">Email*</label>
                                             <input
                                                 id="email"
                                                 type="email"
@@ -90,7 +90,7 @@ const Register: React.FC = () => {
                                                 required
                                             />
 
-                                            <label htmlFor="password" className="mb-2 text-sm text-center text-grey-900">Password*</label>
+                                            <label htmlFor="password" className="mb-2 text-sm py-2 text-center text-grey-900">Password*</label>
                                             <input
                                                 id="password"
                                                 type="password"
@@ -101,7 +101,7 @@ const Register: React.FC = () => {
                                                 required
                                             />
 
-                                            <label htmlFor="confirm_password" className="mb-2 text-sm text-center text-grey-900">Confirm Password*</label>
+                                            <label htmlFor="confirm_password" className="mb-2 text-sm py-2 text-center text-grey-900">Confirm Password*</label>
                                             <input
                                                 id="confirm_password"
                                                 type="password"
@@ -127,10 +127,13 @@ const Register: React.FC = () => {
 
                                             <button
                                                 type="submit"
-                                                className="w-full px-6 py-5 mb-5 text-sm font-bold leading-none text-white transition duration-300 md:w-96 rounded-2xl hover:bg-purple-blue-600 focus:ring-4 focus:ring-purple-blue-100 bg-purple-blue-500"
+                                                className="w-full bg-yellow-500 px-6 py-5 mb-5 text-sm 
+                                                font-bold leading-none text-white transition duration-300 md:w-96 
+                                                rounded-2xl hover:bg-yellow-600 focus:ring-4 focus:ring-yellow-100"
                                             >
                                                 Create Account
                                             </button>
+
 
                                             <p className="text-sm leading-relaxed text-grey-900">
                                                 By signing up, you agree to the{' '}
