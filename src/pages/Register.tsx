@@ -47,7 +47,6 @@ const Register: React.FC = () => {
             <HeaderDesktop />
             <main className="w-[1401.4px] flex flex-row items-start justify-start pt-[120px] px-[73px] box-border max-w-full lg:pl-9 lg:pr-9 lg:box-border">
                 <section className="flex-1 flex flex-col items-center justify-center gap-[127.5px] max-w-full text-left text-12xl text-black font-noto-serif lg:gap-[64px] mq450:gap-[16px] mq750:gap-[32px]">
-
                     <div className="flex flex-col items-center w-[600px] mx-auto bg-white rounded-lg pt-12 my-5">
                         <div className="flex justify-center items-center w-[500px] h-full my-auto xl:gap-14 lg:justify-normal md:gap-5 draggable">
                             <div className="flex items-center justify-center w-full lg:p-12">
@@ -56,13 +55,13 @@ const Register: React.FC = () => {
                                         <h3 className="mb-3 text-14xl font-extrabold text-dark-grey-900">Sign Up</h3>
 
                                         {error && <div className="text-red-500 mb-4">{error}</div>}
-                                        <div className="items-center align-center">
+                                        <div className="items-center align-center border border-gray-300 rounded-lg p-6">
                                             <label htmlFor="name" className="mb-2 text-sm py-2 text-center text-grey-900">First Name*</label>
                                             <input
                                                 id="name"
                                                 type="text"
                                                 placeholder="First Name"
-                                                className="flex items-center w-full px-5 py-4 mb-7 mr-2 text-sm font-medium outline-none focus:bg-grey-400 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl"
+                                                className="flex items-center w-full px-5 py-4 mb-7 mr-2 text-sm font-medium outline-none focus:bg-grey-400 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl border border-gray-300"
                                                 value={name}
                                                 onChange={(e) => setName(e.target.value)}
                                                 required
@@ -73,7 +72,7 @@ const Register: React.FC = () => {
                                                 id="surname"
                                                 type="text"
                                                 placeholder="Last Name"
-                                                className="flex items-center w-full px-5 py-4 mb-7 mr-2 text-sm font-medium outline-none focus:bg-grey-400 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl"
+                                                className="flex items-center w-full px-5 py-4 mb-7 mr-2 text-sm font-medium outline-none focus:bg-grey-400 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl border border-gray-300"
                                                 value={surname}
                                                 onChange={(e) => setSurname(e.target.value)}
                                                 required
@@ -84,7 +83,7 @@ const Register: React.FC = () => {
                                                 id="email"
                                                 type="email"
                                                 placeholder="mail@loopple.com"
-                                                className="flex items-center w-full px-5 py-4 mb-7 mr-2 text-sm font-medium outline-none focus:bg-grey-400 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl"
+                                                className="flex items-center w-full px-5 py-4 mb-7 mr-2 text-sm font-medium outline-none focus:bg-grey-400 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl border border-gray-300"
                                                 value={email}
                                                 onChange={(e) => setEmail(e.target.value)}
                                                 required
@@ -95,7 +94,7 @@ const Register: React.FC = () => {
                                                 id="password"
                                                 type="password"
                                                 placeholder="Enter a password"
-                                                className="flex items-center w-full px-5 py-4 mb-7 mr-2 text-sm font-medium outline-none focus:bg-grey-400 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl"
+                                                className="flex items-center w-full px-5 py-4 mb-7 mr-2 text-sm font-medium outline-none focus:bg-grey-400 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl border border-gray-300"
                                                 value={password}
                                                 onChange={(e) => setPassword(e.target.value)}
                                                 required
@@ -106,7 +105,7 @@ const Register: React.FC = () => {
                                                 id="confirm_password"
                                                 type="password"
                                                 placeholder="Confirm Password"
-                                                className="flex items-center w-full px-5 py-4 mb-7 mr-2 text-sm font-medium outline-none focus:bg-grey-400 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl"
+                                                className="flex items-center w-full px-5 py-4 mb-7 mr-2 text-sm font-medium outline-none focus:bg-grey-400 placeholder:text-grey-700 bg-grey-200 text-dark-grey-900 rounded-2xl border border-gray-300"
                                                 value={confirmPassword}
                                                 onChange={(e) => setConfirmPassword(e.target.value)}
                                                 required
@@ -146,20 +145,13 @@ const Register: React.FC = () => {
                                                 </a>
                                                 .
                                             </p>
-                                            <div className="text-grey-900 mt-6 text-center">
-                            Already have an account?{' '}
-                            <a className="font-bold text-purple-blue-500" href="../login/">
-                                Log in
-                            </a>
-                            .
-                        </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
 
-                        
+
                     </div>
                 </section>
             </main>
@@ -169,3 +161,4 @@ const Register: React.FC = () => {
 };
 
 export default Register;
+
