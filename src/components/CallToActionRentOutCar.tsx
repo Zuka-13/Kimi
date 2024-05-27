@@ -26,9 +26,9 @@ const CallToActionRentOutCar: FunctionComponent = () => {
         </div>
         <div className="self-stretch flex flex-row items-start justify-center py-0 pr-5 pl-[23px] text-mid-6 text-black font-inter">
           <div className="rounded-lg bg-kimi-yellow flex flex-row items-start justify-start py-0 pr-[17px] pl-[18px] mix-blend-normal whitespace-nowrap border-[1px] border-solid border-kimi-yellow">
-            <b className="relative leading-[49px] inline-block min-w-[98px]">
+          <a href="./Login" className="relative leading-[49px] inline-block min-w-[98px] text-black font-bold no-underline">
               Get started
-            </b>
+            </a>
           </div>
         </div>
       </div>

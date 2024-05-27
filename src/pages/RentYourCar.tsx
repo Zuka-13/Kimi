@@ -1,14 +1,15 @@
 import { FunctionComponent } from "react";
 import FinancialFuture from "../components/FinancialFuture";
-import DivSeoPagesE9c47y from "../components/DivSeoPagesE9c47y";
+import SuccessStories from "../components/SuccessStories";
 import CallToActionRentOutCar from "../components/CallToActionRentOutCar";
 import HeaderDesktop from "../components/HeaderDesktop";
 import Button from "../components/Button";
+import FooterDesktop from "../components/FooterDesktop";
 
 const RentYourCar: FunctionComponent = () => {
   
   return (
-    <div className="w-full relative bg-darkslategray-200 flex flex-col items-start justify-start pt-0 px-0 pb-[314.4px] box-border gap-[43px] mix-blend-normal leading-[normal] tracking-[normal] mq750:gap-[21px]">
+    <div className="w-full relative bg-darkslategray-200 flex flex-col items-center justify-start pt-0 px-0  box-border gap-[43px] mix-blend-normal leading-[normal] tracking-[normal] mq750:gap-[21px]">
       <HeaderDesktop />
       <section className="w-[1189px] flex flex-row items-start justify-center py-0 px-5 box-border max-w-full text-left text-smi-2 text-whitesmoke-200 font-inter">
       <div className="flex flex-col items-start justify-start gap-[40px] max-w-full mq750:gap-[20px]">
@@ -35,8 +36,9 @@ const RentYourCar: FunctionComponent = () => {
         src="/image-eiig1vx0@2x.png"
       />
       <FinancialFuture />
-      <DivSeoPagesE9c47y />
+      <SuccessStories />
       <CallToActionRentOutCar />
+      <FooterDesktop />
     </div>
   );
 };

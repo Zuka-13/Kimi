@@ -26,9 +26,9 @@ const FrameComponent1: FunctionComponent = () => {
           </div>
           <div className="self-stretch flex flex-row items-start justify-center py-0 pr-5 pl-[29px] text-mid-6">
             <div className="rounded-lg bg-kimi-yellow flex flex-row items-start justify-start py-0 pr-[17px] pl-[18px] mix-blend-normal whitespace-nowrap border-[1px] border-solid border-kimi-yellow">
-              <b className="relative leading-[49px] inline-block min-w-[98px]">
-                Get started
-              </b>
+            <a href="./Login" className="relative leading-[49px] inline-block min-w-[98px] text-black font-bold no-underline">
+              Get started
+            </a>
             </div>
           </div>
         </div>
@@ -160,9 +160,9 @@ const FrameComponent1: FunctionComponent = () => {
               </div>
             </div>
             <div className="rounded-lg bg-kimi-yellow flex flex-row items-start justify-start py-0 pr-[17px] pl-[18px] mix-blend-normal whitespace-nowrap text-mid-6 text-black border-[1px] border-solid border-kimi-yellow">
-              <b className="relative leading-[49px] inline-block min-w-[98px]">
-                Get started
-              </b>
+            <a href="./Login" className="relative leading-[49px] inline-block min-w-[98px] text-black font-bold no-underline">
+              Get started
+            </a>
             </div>
           </div>
           <div className="h-[598px] w-[444.6px] flex flex-col items-start justify-end pt-0 px-0 pb-2 box-border min-w-[444.6000000000003px] max-w-full mq750:min-w-full mq1050:flex-1">
@@ -330,11 +330,6 @@ const FrameComponent1: FunctionComponent = () => {
                   maintain their full-time jobs.
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="self-stretch flex flex-row items-start justify-center py-0 pr-5 pl-[22px] text-base-4 text-kimi-yellow">
-            <div className="relative leading-[24px] font-medium inline-block min-w-[118px]">
-              Read their story
             </div>
           </div>
         </div>

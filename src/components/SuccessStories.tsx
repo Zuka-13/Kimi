@@ -9,18 +9,7 @@ const DivSeoPagesE9c47y: FunctionComponent = () => {
         </div>
       </div>
       <div className="self-stretch flex flex-col items-end justify-start gap-[32.5px] max-w-full text-8xl mq450:gap-[16px]">
-        <div className="flex flex-row items-start justify-start gap-[30px]">
-          <img
-            className="h-[18px] w-[18px] relative overflow-hidden shrink-0 mix-blend-normal min-h-[18px]"
-            alt=""
-            src="/icon-5.svg"
-          />
-          <img
-            className="h-[18px] w-[18px] relative overflow-hidden shrink-0 mix-blend-normal min-h-[18px]"
-            alt=""
-            src="/icon-51.svg"
-          />
-        </div>
+       
         <div className="self-stretch flex flex-row items-start justify-start max-w-full">
           <div className="w-[806px] flex flex-row items-start justify-start gap-[32px] max-w-full mq450:gap-[16px] mq1050:flex-wrap">
             <div className="flex-1 flex flex-col items-start justify-start gap-[32px] min-w-[259px] max-w-full mq450:gap-[16px]">
@@ -38,9 +27,7 @@ const DivSeoPagesE9c47y: FunctionComponent = () => {
                   </div>
                 </div>
               </div>
-              <div className="relative text-base-4 leading-[24px] font-medium text-kimi-yellow inline-block min-w-[79px]">
-                Read more
-              </div>
+              
             </div>
             <img
               className="w-[376px] relative max-h-full overflow-hidden shrink-0 object-cover mix-blend-normal max-w-full mq1050:flex-1"
